@@ -1,0 +1,71 @@
+body {
+  background:url("../img/bg_tile.jpg");
+}
+ 
+section, footer {
+  width: 95%;
+  margin: 2.5%;
+  text-align: justify;
+  border: 2px solid;
+  padding: 1%;
+  background-color: #ffffe6;
+}
+ 
+p {
+  text-indent: 0;
+  font-size: 1em;
+  line-height: 1.25em;
+}
+
+h1{
+text-align: center;
+color: #e6e6e6;
+font-family: 'Verdana';
+}
+ 
+h2{
+  text-align: center;
+  color: #000066;
+  font-family: "Verdana";
+}
+ 
+table{
+	 border: 1px solid;
+   border-collapse: collapse;
+}
+ 
+table tr td, th{
+	 border: 1px solid;
+}
+ 
+table tr th {
+	text-decoration: bold;
+	text-align: center;
+} 
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 1em 2em;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer{
+  height: 45em;
+}
+
+.images{
+  height: 20em;
+  width: 47.5%;
+  float: left;
+  overflow: hidden;
+  background: no-repeat center center;
+  margin: 1em;
+}
+  
+img{
+  margin: 5px;
+  width: 100%;
+}

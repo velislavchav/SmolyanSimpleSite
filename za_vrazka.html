@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> Смолян </title>
+        <link rel="stylesheet" type="text/css" href="more/css/resetCSS.css" />
+        <link rel="stylesheet" href="more/css/style_form.css" />
+    </head>
+    
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="home"><a href="index.html"> Начало </a></li> 
+          <li class="about"><a href="zabelejitelnosti.html"> Забележителности </a></li>
+          <li class="news"><a href="istoriq.html"> История </a></li>
+          <li class="contact"><a class="active" href="za_vrazka.html"> За връзка с нас </a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+  	<section>
+      <div id="formDiv">
+    		<form action="index.php" method="GET" id="mainForm">
+          <h1> Попълни данните </h1>
+          <h2 id="validateMsg"></h2>
+          <br>
+
+          <div id="text">
+            <span> Име: </span><br>
+      			<span> Фамилия: </span><br>
+            <span> Имейл адрес: </span><br>
+            <span> Създай парола: </span><br>
+            <span> Повтори парола: </span><br>
+            <span> Дата на раждане: </span><br>
+            <span> Пол: </span><br>
+            <span> БГ номер: </span><br>
+            <span> Държава: </span><br>
+          </div>
+
+          
+          <div id="inputes">     
+             <input class="input" id="firstName" type="text" name="firstName" required="true"/>
+                <br> 
+             <input class="input" id="secondName" type="text" name="secondName" required="true"/>
+                <br>
+    				 <input class="input" id="email" type="email" name="email" required="true" />
+                <br>
+             <input class="input" id="password" type="password" name="password" required="true" />
+                <br>
+            <input class="input" id="repassword" type="password" name="repassword" required="true" />
+                <br>
+            <input class="input" id="date" type="date" name="bday" min="1980-06-01" max="2018-06-01">
+                <br>
+            <select class="input" id="gender" name="gender">
+                <option value="male"> Мъж </option>
+                <option value="female"> Жена </option>
+            </select>
+                <br>   
+            <input class="input" id="number" type="tel" name="number" />     
+                <br>
+            <div id="rb">
+                <input type="radio" name="country" value="bg" checked="checked"> България <br>
+                <input type="radio" name="country" value="rom"> Румъния<br>
+                <input type="radio" name="country" value="gre"> Гърция<br>
+                <input type="radio" name="country" value="other"> Друга
+            </div>
+          </div>
+
+          <div id="btnSubmitDiv">
+            <button class="button" type="submit"><span> Изпрати </span></button>
+          </div>
+
+          <div id="btnResetDiv">	
+            <button class="button" id="reset" type="reset" onclick="resetAllInputes()"><span>Изтрий всичко!</span></button>
+          </div> 
+
+    		</form>
+     </div>
+  	</section>         
+    <script type="text/javascript" src="more/script.js"></script>
+  </body>
+</html>

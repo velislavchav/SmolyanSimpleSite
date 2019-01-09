@@ -1,0 +1,244 @@
+body {
+  background-image: url("../img/rhodope_mountains_smolyan_lakes_2013_by_ksr_by_rizov-d6wkfhg.jpg");
+}
+ 
+nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-left: 15%;
+  text-align: center;
+  background-color: #444;
+}
+
+section > #left {
+  background-color: rgba(132, 136, 142, 0.5);
+  border-radius: 2%;
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-top: 7em;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding-right: 1em;
+  padding-left: 1em;
+  margin-right: 2em;
+  margin-left: 2em;
+  overflow: auto;
+}
+
+nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 2.1em;
+  height: 2.1em;
+  display: inline;
+}
+ 
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+ 
+nav a:hover {
+  background-color: #073c77; /* #073c77 */
+  color: #d73444; /* #d73444 */
+}
+
+a,a:visited,a:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position: relative;
+  transition:0.5s color ease;
+  text-decoration:none;
+  color: #3a82d1;
+} 
+ 
+nav a.active {
+  background-color: #ff661a;
+  color: #444;
+  cursor: default;
+}
+
+@media screen and (min-width: 350px) {
+  nav li {
+    width: 10em;
+    border-bottom: none;
+    height: 2em;
+    line-height: 2em;
+    font-size: 1.4em;
+    text-align: center;
+    float: left;
+  }
+}
+
+  /* styling divs */
+#left{
+	margin: 5em 0;
+	width: 19%;
+	float: left;
+	list-style: none;
+}
+
+.submenu{
+list-style: none;
+padding: 1em ;
+margin: 2em;
+display: block;
+}
+
+#right{
+	margin:3em 0;
+  margin-top: 5em;
+	float: left;
+  overflow: hidden;
+  width: 75%;
+  text-align: center;
+}
+
+ /* menu for landmark */
+a,a:visited,a:hover,a:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+	position: relative;
+  transition:0.5s color ease;
+	text-decoration:none;
+  color: #3a82d1; /* #3a82d1; */
+} 
+
+section > #left a {
+  color: white;
+}
+
+section > #left a:hover {
+  color: #edff54;
+}
+
+
+a.before:before,a.after:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+}
+a.before:before{
+  top:-0.25em;
+}
+a.after:after{
+  bottom:-0.25em;
+}
+a.before:before,a.after:after{
+  height:5px;
+  height:0.35rem;
+  width:0;
+  background:#d73444;
+}
+a.first:after{
+  left:0;
+}
+a.second:after{
+  right:0;
+}
+a.third:after,a.sixth:before,a.sixth:after{
+  left:50%;
+  -webkit-transform:translateX(-50%);
+          transform:translateX(-50%);
+}
+a.fourth:before,a.fourth:after{
+  left:0;
+}
+a.fifth:before,a.fifth:after{
+  right:0;
+}
+a.seventh:before{
+  right:0;
+}
+a.seventh:after{
+  left:0;
+}
+a.eigth:before{
+  left:0;
+}
+a.eigth:after{
+  right:0;
+}
+a.before:hover:before,a.after:hover:after{
+  width:100%;
+}
+
+.square{
+  box-sizing: border-box;
+  margin-left: -0.4em;
+  position: relative;
+  font-size: 1.5em;
+  overflow: hidden;
+}
+.square a{
+  position: static;
+  font-size: 100%;
+  padding: 0.2em 0.4em;
+}
+.square:before,.square:after{
+  content: "";
+  box-sizing:border-box;
+  transition:0.25s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position: absolute;
+  width: 5px;
+  width: 0.35rem;
+  height: 0;
+  background: #d73444;
+}
+.square:before{
+  left: 0;
+  bottom: -0.2em;
+}
+.square:after{
+  right: 0;
+  top: -0.2em;
+}
+.square a:before{
+  left: 0;
+  transition: 0.25s all ease;
+}
+.square a:after{
+  right: 0;
+  transition: 0.25s all ease;
+}
+
+.square:hover:before,.square:hover:after{
+  height: calc(100% + 0.4em);
+}
+
+.square:hover a:before,.square:hover a:after{
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  #right{
+    margin-top: 15%;
+    transform: rotate(90deg);
+  }
+
+  .submenu{
+    display: none;
+  }
+  section > #left {
+    background-color: rgba(132, 136, 142, 0);
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  #right{ 
+    width: 60%;
+    height: 70%;
+    overflow: hidden;   
+  }
+}
